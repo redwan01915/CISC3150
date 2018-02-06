@@ -1,0 +1,64 @@
+2.
+output
+1
+-4
+7
+9
+0
+10
+-67
+
+3.
+OUTPUT
+Month Int: 5
+
+May
+
+4.
+output
+1
+-4
+7
+9
+0
+10
+-67
+
+5.
+output
+Please enter the radius of circle 1 >
+6
+Please enter the x coordinate of circle 1 >
+6
+Please enter the y coordinate of circle 1 >
+6
+Please enter the radius of circle 2 >
+6
+Please enter the X coordinate of circle 2 >
+7
+Please enter the Y coordinate of circle 2 >
+7
+The circles ARE colliding
+
+
+6.
+The Coordinates of the triangle are:
+Enter the x coordinate of point 1 >
+6
+Enter the y coordinate of point 1 >
+5
+Enter the x coordinate of point 2 >
+5
+Enter the y coordinate of point 2 >
+5
+Enter the x coordinate of point 3 >
+5
+Enter the y coordinate of point 3 >
+5
+1.0
+
+1.0
+
+0.0
+
+This is NOT a real triangle
