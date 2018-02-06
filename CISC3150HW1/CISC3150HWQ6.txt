@@ -1,0 +1,16 @@
+The Coordinates of the triangle are:
+Enter the x coordinate of point 1 >
+6
+Enter the y coordinate of point 1 >
+5
+Enter the x coordinate of point 2 >
+5
+Enter the y coordinate of point 2 >
+5
+Enter the x coordinate of point 3 >
+5
+Enter the y coordinate of point 3 >
+5
+1.0
+
+1.0
