@@ -1,0 +1,6 @@
+Start Running Time 1520548873037
+Number of Dots that hit the circle: 2000013542
+Number of Dots that hit the square: 1999986458
+The Ratio of areas (PI/4) = 0.5000033855
+The estimated value of PI = 4 X (PI/4): 2.000013542
+50621
