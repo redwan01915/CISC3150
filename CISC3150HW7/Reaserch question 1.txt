@@ -1,43 +1,11 @@
-{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf400
-{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
-{\colortbl;\red255\green255\blue255;\red27\green31\blue34;\red255\green255\blue255;\red109\green109\blue109;
-\red21\green23\blue26;}
-{\*\expandedcolortbl;;\cssrgb\c14118\c16078\c18039;\cssrgb\c100000\c100000\c100000;\cssrgb\c50196\c50196\c50196;
-\cssrgb\c10588\c12157\c13725\c29804;}
-\margl1440\margr1440\vieww10800\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+1. The purpose behind this is since the compiler identifies that we are throwing NullPointerException which is unchecked. It doesn't need to check the special case again so when it is gotten as a throwable the compiler keeps on throwable the exemption alongside declear type.
 
-\f0\fs24 \cf0 REDWAN AHMED\
-CISC3150 Research Q1\
-\
-1. In the class
-\f1 \cf2 \expnd0\expndtw0\kerning0
-\outl0\strokewidth0 \strokec2  that the java compiler seems to consider the actual type exception instead of just declare type. So, this is not an error. \
-\
-Source :\
+souraces:
+https://www.tutorialspoint.com/java/java_exceptions.htm
+https://stackoverflow.com/questions/197986/what-causes-javac-to-issue-the-uses-unchecked-or-unsafe-operations-warning/23908919 
+https://docs.oracle.com/javase/tutorial/essential/exceptions/runtime.html
 
-\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth12393\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
-\clmrg \clvertalt \clshdrawnil \clwWidth12393\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
-\cf2 https://docs.oracle.com/javase/8/docs/technotes/guides/language/catch-multiple.html\
-\
-\cell 
-\pard\intbl\itap1\cell \row
+2. we can call the default implementation of a method in an interface with some weird syntax because of the default methods java 9 which can provide the ability to extend interfaces without the need to modify existing implementations. 
 
-\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \trbrdrl\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth10081\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth10081\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
-\pard\intbl\itap1\cell
-\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
-\cf2 \
-\cell \row
-
-\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat3 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
-\clvertalt \clshdrawnil \clwWidth12393\clftsWidth3 \clminw1000 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
-\clvertalt \clshdrawnil \clwWidth10081\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
-\pard\intbl\itap1\pardeftab720\sl400\qr\partightenfactor0
-\cf5 \strokec5 \cell 
-\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
-\cf2 \strokec2 \cell \lastrow\row
-}
+https://stackoverflow.com/questions/19976487/explicitly-calling-a-default-method-in-java
+https://www.tutorialspoint.com/java8/java8_default_methods.htm
