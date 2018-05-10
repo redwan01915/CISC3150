@@ -1,0 +1,53 @@
+REDWAN AHMED
+CISC3150
+HW9 Question Answer output 
+
+Referance: 
+https://docs.oracle.com/javase/tutorial/essential/concurrency/locksync.html
+//https://www.javatpoint.com/synchronized-block-example
+//https://www.geeksforgeeks.org/method-block-synchronization-java/
+//https://stackoverflow.com/questions/8161896/example-code-to-show-how-java-synchronized-block-works
+//https://stackoverflow.com/questions/9848616/whats-the-meaning-of-an-objects-monitor-in-java-why-use-this-word
+//http://javarevisited.blogspot.com/2011/05/wait-notify-and-notifyall-in-java.html
+
+
+In our class we went over the code posted at:
+https://pastebin.com/dwZqBs4u
+But we ran into a bunch of problems.
+
+First, we were unable to instantiate the Object class. Explain that.
+
+Second, we saw that with the notifyAll() uncommented, and the keyword
+synchronized removed from the method declarations, the program just died
+without throwing any exceptions. Given that we are working with an
+infinite loop here, that shouldn't have happened. Explain that.
+
+At home, I was playing around with this code, and I noticed that if you
+wrap notifyAll() in a try/catch block, you'll notice that
+IllegalMonitorStateException is being thrown. The reason why you don't get
+to see it is because it is a child of RuntimeException. Figure out how
+you'd fix it. Research how to have two threads share an object's monitor &
+fix the code.
+_______________________________________________________________________________________
+
+Question 1: we were unable to instantiate the Object class.
+
+Ans: The reason of we were unable to instantiate the Object class is because the Object variable of the producer and consumer class are not locked and if we use "synchronize" here it will work as lock.Also, superclass is not allow to pass object type and Object class do not have run method that need for Thread running.
+
+Question 2. Second, we saw that with the notifyAll() uncommented, and the keyword
+synchronized removed from the method declarations, the program just died
+without throwing any exceptions. Given that we are working with an
+infinite loop here, that shouldn't have happened. Explain that. 
+
+Ans: The reason the program crashes or just died is because the notifyAll() throws an unchecked exception. Since the unchecked exception doesn't pop up any error on the screen and let the user knows about it to handle it, once the exception is thrown in notifyAll() the throws Throwable in " public void producer() throws Throwable " send it up to the threads in " public void run() " and the program dies here because of the unchecked exception is not being deal with.
+
+3. At home, I was playing around with this code, and I noticed that if you
+wrap notifyAll() in a try/catch block, you'll notice that
+IllegalMonitorStateException is being thrown. The reason why you don't get
+to see it is because it is a child of RuntimeException. Figure out how
+you'd fix it. Research how to have two threads share an object's monitor &
+fix the code.
+
+Ans: In the java documentation for the method notifyAll(), it wakes up all threads on the current object's monitor.For us in-order to fix the code, we will must have use "synchronized" keyword here. Since the purpose of the "synchronized" keyword is to act as a lock controlling system among the access of many threads to shared variable for the nature of mutual exclusion.
+
+ 
